@@ -3,6 +3,8 @@ import {
   Environment,
   OrbitControls,
   PerspectiveCamera,
+  Html,
+  useProgress,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -19,6 +21,17 @@ import { FloatingGrid } from "./FloatinGrid";
 import { Ground } from "./Ground";
 import { Rings } from "./Rings";
 import "./style.css";
+import LoadingSpinner from "./ui/LoadingSpinner";
+
+function Loader() {
+  const { progress } = useProgress();
+  return (
+    <Html center>
+      <LoadingSpinner />
+      <div className="loading">{Math.round(progress)}%</div>
+    </Html>
+  );
+}
 
 function CarShow() {
   return (
@@ -95,11 +108,11 @@ function CarShow() {
 
 function App() {
   return (
-    <Suspense fallback={null}>
-      <Canvas shadows>
+    <Canvas shadows>
+      <Suspense fallback={<Loader />}>
         <CarShow />
-      </Canvas>
-    </Suspense>
+      </Suspense>
+    </Canvas>
   );
 }
 

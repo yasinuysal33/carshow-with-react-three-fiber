@@ -10,7 +10,6 @@ function Box({ color }) {
   const [scale] = useState(() => Math.pow(Math.random(), 2.0) * 0.5 + 0.05);
 
   const [position, setPosition] = useState(getInitialPosition());
-  console.log(position);
 
   function getInitialPosition() {
     let v = new Vector3(
