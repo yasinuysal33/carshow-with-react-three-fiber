@@ -2,5 +2,5 @@
 
 - [Live](https://car-show.yasin-uysal.com/)
 
-| ![](/screenshots/CarShow.jpg) | ![](/screenshots/CarShow.jpg) |
-| ----------------------------- | ----------------------------- |
+| ![](/public/screenshots/CarShow.jpg) | ![](/public/screenshots/CarShow-1.jpg) |
+| ------------------------------------ | -------------------------------------- |
