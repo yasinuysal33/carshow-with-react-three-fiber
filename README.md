@@ -1,4 +1,4 @@
-## React 3 Fiber, Drei, Three study
+## React 3 Fiber, Drei, Three js study
 
 - [Live](https://car-show.yasin-uysal.com/)
 
